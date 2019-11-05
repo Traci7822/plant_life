@@ -10,6 +10,8 @@ export class HerbsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // move to db
+    // alphabetize
     this.herbs = [
       { id: 1, english_name: "St. Joans Wort", latin_name: "Hypericum perforatum" }
     ];

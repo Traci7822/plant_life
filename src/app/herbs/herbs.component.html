@@ -1,9 +1,13 @@
-<h1>Herbalism/Plant Medicine</h1>
+<div class="col-md-8 offset-md-2">
+  <h1>Herbalism/Plant Medicine</h1>
+</div>
+<hr />
+<br />
 <div class="all_herbs" *ngFor="let herb of herbs">
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        {{herb.english_name}}/{{herb.latin_name}}
+        <span>{{herb.english_name}} / <i>{{herb.latin_name}}</i></span>
       </mat-panel-title>
       <!-- <mat-panel-description></mat-panel-description> -->
     </mat-expansion-panel-header>
