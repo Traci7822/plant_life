@@ -1,4 +1,13 @@
 <h1>Herbalism/Plant Medicine</h1>
 <div class="all_herbs" *ngFor="let herb of herbs">
-  {{herb.english_name}}/{{herb.latin_name}}
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{herb.english_name}}/{{herb.latin_name}}
+      </mat-panel-title>
+      <!-- <mat-panel-description></mat-panel-description> -->
+    </mat-expansion-panel-header>
+    <p>Info about this herb</p>
+  </mat-expansion-panel>
+  <!-- <a (click)="expand()">{{herb.english_name}}/{{herb.latin_name}}</a> -->
 </div>

@@ -11,7 +11,7 @@ export class HerbsComponent implements OnInit {
 
   ngOnInit() {
     this.herbs = [
-      { english_name: "St. Joans Wort", latin_name: "Hypericum perforatum" }
+      { id: 1, english_name: "St. Joans Wort", latin_name: "Hypericum perforatum" }
     ];
   }
 
