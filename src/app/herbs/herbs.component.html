@@ -3,15 +3,19 @@
 </div>
 <hr />
 <br />
-<div class="all_herbs" *ngFor="let herb of herbs">
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        <span>{{herb.english_name}} / <i>{{herb.latin_name}}</i></span>
-      </mat-panel-title>
-      <!-- <mat-panel-description></mat-panel-description> -->
-    </mat-expansion-panel-header>
-    <p>Info about this herb</p>
-  </mat-expansion-panel>
-  <!-- <a (click)="expand()">{{herb.english_name}}/{{herb.latin_name}}</a> -->
-</div>
+<mat-accordion multi="false">
+  <div class="all_herbs" *ngFor="let herb of herbs">
+    <mat-expansion-panel [expanded]="">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <span>{{herb.english_name}} / <i>{{herb.latin_name}}</i></span>
+        </mat-panel-title>
+        <!-- <mat-panel-description></mat-panel-description> -->
+      </mat-expansion-panel-header>
+      <p>Info about this herb</p>
+      <p *ngIf="herb.alternative_name">
+        <strong>Alternative Names:</strong> {{herb.alternative_name}}
+      </p>
+    </mat-expansion-panel>
+  </div>
+</mat-accordion>

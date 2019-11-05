@@ -13,8 +13,8 @@ export class HerbsComponent implements OnInit {
     // move to db
     // alphabetize
     this.herbs = [
-      { id: 1, english_name: "St. Joans Wort", latin_name: "Hypericum perforatum" }
+      { english_name: "St. Joans Wort", latin_name: "Hypericum perforatum" },
+      { english_name: "Tulsi", latin_name: "Ocimum tenuiflorum", alternative_name: "Ocimum tenuiflorum"},
     ];
   }
-
 }
